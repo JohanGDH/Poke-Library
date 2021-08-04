@@ -10,3 +10,5 @@ const getPokemons = async (name) => {
         console.error("Error en la petición: ", error)
     }
 }
+
+export default getPokemons;

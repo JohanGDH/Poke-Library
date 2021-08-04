@@ -1,15 +1,16 @@
 import Home from "../pages/home";
+import getHash from "../utils/getHash";
 import resolveRoutes from '../utils/resolveRoutes'
 
 const routes = {
     '/': Home,
-    '/:name': Pokemon,
 }
 
 const router = async () => {
     const content = null || document.getElementById('content');
 
-    let route = await resolveRoutes();
+    let hash = getHash()
+    let route = await resolveRoutes(hash);
     
     const render = routes[route]
         ? routes[route]

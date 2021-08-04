@@ -1,6 +1,6 @@
 import getPokemons from '../utils/getData';
 
-const Home = () => {
+const Home = async () => {
     const pokemons = await getPokemons();
     const view = `
     <div class="pokemons">
