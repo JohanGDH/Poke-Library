@@ -1,0 +1,15 @@
+{
+  "name": "poke-library",
+  "version": "1.0.0",
+  "description": "SPA con la PokeAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SPA",
+    "JS"
+  ],
+  "author": "Johan Díaz <jgiandh46@gmail.com>",
+  "license": "MIT"
+}
