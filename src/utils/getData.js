@@ -1,4 +1,4 @@
-const API = 'https://pokeapi.co/api/v2/';
+const API = 'https://pokeapi.co/api/v2/pokemon';
 
 const getPokemons = async (name) => {
     const apiUrl = name ? `${API}${name}` : API;
