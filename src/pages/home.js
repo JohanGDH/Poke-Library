@@ -10,10 +10,14 @@ const Home = async () => {
      const view = `
      <article>
         <div>
+           
             ${pokemons.map(pokemon => `
+                <a href="#/${pokemon.name}">
                 <h2>${pokemon.name}</h2>
                 <img src="${pokemon.sprites.front_default}">
+                </a>
             `).join('')}
+            
         </div>
      </article>
      `
