@@ -1,17 +1,22 @@
-import getPokemons from '../utils/getData';
+import getData from '../utils/getData';
+import getPokemons from '../utils/getPokemons'
+
 
 const Home = async () => {
-    const pokemons = await getPokemons();
-    const view = `
-    <div class="pokemons">
-        ${pokemons.results.map(pokemon => `
-            <article class="pokemon-item">
+    
+    const data = await getData();    
+    let pokemons = await getPokemons(data);
+    
+     const view = `
+     <article>
+        <div>
+            ${pokemons.map(pokemon => `
                 <h2>${pokemon.name}</h2>
-            </article>        
-        
-        `).join('')}
-
-    </div>`
+                <img src="${pokemon.sprites.front_default}">
+            `).join('')}
+        </div>
+     </article>
+     `
     return view;
 }
 
