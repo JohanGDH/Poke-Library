@@ -1,5 +1,6 @@
 import searchBox from '../pages/searchBox';
 import Home from "../pages/home";
+import Error404 from '../pages/404'
 import Pokemon from "../pages/pokemon";
 import getHash from "../utils/getHash";
 import resolveRoutes from '../utils/resolveRoutes'
@@ -7,6 +8,7 @@ import resolveRoutes from '../utils/resolveRoutes'
 const routes = {
     '/': Home,
     '/:name': Pokemon,
+    '404': Error404,
 }
 
 const router = async () => {

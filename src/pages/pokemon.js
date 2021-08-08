@@ -4,8 +4,9 @@ import getData from "../utils/getData";
 const Pokemon = async () => {
     const name = getHash();
     const pokemon = await getData(name);
-
-    const view = `
+    
+    if(pokemon) {
+        const view = `
         <div class="pokemon-inner">
             <article class="pokemon-card">
                 <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
@@ -19,8 +20,10 @@ const Pokemon = async () => {
             </article>
         </div>
     `;
-
-    return view;
+        return view;
+    } else {
+        location.assign('#/404')
+    }    
 }
 
 export default Pokemon;

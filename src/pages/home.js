@@ -21,7 +21,8 @@ const Home = async () => {
         </div>
      </article>
      `
-    return view;
+    
+    return view;    
 }
 
 export default Home;
