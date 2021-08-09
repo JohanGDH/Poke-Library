@@ -1,11 +1,8 @@
 const API = 'https://pokeapi.co/api/v2/pokemon/';
 
-const getData = async (name) => {
+const getData = async (pokemon) => {
 
-    let apiUrl = name ? `${API}${name}` : API;
-    if(name >= 12) {
-        apiUrl = name
-    }
+    let apiUrl = pokemon ? `${API}${pokemon}` : API;
 
     try {
         const response = await fetch(apiUrl)
@@ -16,9 +13,4 @@ const getData = async (name) => {
     }
 }
 
-
 export default getData;
-
-
-
-

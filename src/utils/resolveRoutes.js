@@ -1,7 +1,6 @@
 const resolveRoutes = (route) => {
     
     if(route === '404') {
-        console.log(route)
         return '404';
     }    
 
