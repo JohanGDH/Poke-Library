@@ -4,21 +4,19 @@ import getPokemons from '../utils/getPokemons'
 
 const Home = async () => {
 
-    const Ids = await randomsID(1,500,20)
+    const Ids = await randomsID(1,500,24)
     let pokemons = await getPokemons(Ids);
 
      const view = `
-     <article>
-        <div>
-
-            ${pokemons.map(pokemon => `
-                <a href="#/${pokemon.name}">
-                <h2>${pokemon.name}</h2>
+     <article class="pokemons">        
+        ${pokemons.map(pokemon => `
+            <div class ="pokemon-item">
+                <a href="#/${pokemon.name}">                
                 <img src="${pokemon.sprites.front_default}">
+                <h2>${pokemon.name.toUpperCase()}</h2>
                 </a>
-            `).join('')}
-
-        </div>
+            </div>
+        `).join('')}        
      </article>
      `
 

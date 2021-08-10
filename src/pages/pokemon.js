@@ -10,12 +10,12 @@ const Pokemon = async () => {
         <div class="pokemon-inner">
             <article class="pokemon-card">
                 <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
-                <h2>${pokemon.name}</h2>
-                <ul>
+                <h2>${pokemon.name.toUpperCase()}</h2>
+                
                 ${pokemon.stats.map(stat => `
-                    <li>${stat.stat.name}-${stat.base_stat} </li>
+                    <h3>${stat.stat.name.toUpperCase()}: ${stat.base_stat}</h3></li>
                 `).join('')}
-                </ul>
+                
                 <a href="../">Atrás</a>
             </article>
         </div>
