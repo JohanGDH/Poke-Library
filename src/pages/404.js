@@ -3,7 +3,7 @@ const Error404 = async () => {
         <h1>
             No encontramos lo que estabas buscando
         </h1>
-        <a href="/">Inicio</a>
+        <a href="https://johangdh.github.io/Poke-Library">Inicio</a>
     
     `
     return view

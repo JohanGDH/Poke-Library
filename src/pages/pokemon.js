@@ -16,7 +16,7 @@ const Pokemon = async () => {
                     <h3>${stat.stat.name.toUpperCase()}: ${stat.base_stat}</h3></li>
                 `).join('')}
                 
-                <a href="../">Atrás</a>
+                <a href="https://johangdh.github.io/Poke-Library">Atrás</a>
             </article>
         </div>
     `;
