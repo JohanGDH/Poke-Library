@@ -1,4 +1,4 @@
-const searchBox = async () => {
+const searchBox =  () => {
 
             setTimeout(()=> {
                 const form = document.getElementById('search');        
@@ -18,7 +18,9 @@ const searchBox = async () => {
         <div>
             <form id="search">
                 <input type="text" placeholder="Busca tu pokemón favorito" id="searchBox">
-                <button id="buttonSearch" disabled type="submit">Buscar</button>
+                <button id="buttonSearch" disabled type="submit">
+                    <img src="./assets/search.svg">
+                </button>
             </form>
         </div>`
         return view;

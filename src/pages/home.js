@@ -13,7 +13,9 @@ const Home = async () => {
             <div class ="pokemon-item">
                 <a href="#/${pokemon.name}">                
                 <img src="${pokemon.sprites.front_default}">
-                <h2>${pokemon.name.toUpperCase()}</h2>
+                <div>
+                    <h2>${pokemon.name.toUpperCase()}</h2>
+                </div>                
                 </a>
             </div>
         `).join('')}        

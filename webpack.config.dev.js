@@ -37,7 +37,14 @@ module.exports = {
                 from: './src/styles/styles.css',
                 to: '',
             }]
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: './src/assets/',
+                to: './assets/',
+            }]
+        }),
+        
     ],
     devServer: {
         port: 6969,
